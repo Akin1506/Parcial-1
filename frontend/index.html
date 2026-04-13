@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergencias Vehiculares</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Plataforma de Emergencias Vehiculares</h1>
+
+    <section class="card">
+      <h2>Registrar Incidente</h2>
+      <form id="form-incidente">
+        <input type="text" id="descripcion" placeholder="Descripción" required>
+        <input type="text" id="ubicacion" placeholder="Ubicación" required>
+        <input type="text" id="tipo" placeholder="Tipo de incidente" required>
+        <input type="text" id="prioridad" placeholder="Prioridad" required>
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Lista de Incidentes</h2>
+      <button id="btn-cargar">Cargar Incidentes</button>
+      <div id="lista-incidentes"></div>
+    </section>
+
+    <section class="card">
+      <h2>Asignar Taller</h2>
+      <form id="form-asignar">
+        <input type="number" id="id-asignar" placeholder="ID del incidente" required>
+        <input type="text" id="taller" placeholder="Nombre del taller" required>
+        <button type="submit">Asignar</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Cambiar Estado</h2>
+      <form id="form-estado">
+        <input type="number" id="id-estado" placeholder="ID del incidente" required>
+        <input type="text" id="nuevo-estado" placeholder="Nuevo estado" required>
+        <button type="submit">Actualizar</button>
+      </form>
+    </section>
+
+    <div id="mensaje"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
